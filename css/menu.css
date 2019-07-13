@@ -1,0 +1,230 @@
+.sidebar
+{
+	position: fixed;
+	top:0;
+	right:-100%;
+    background:#003164;
+border:solid 1px gray;
+	width:100%;
+	height:100%;
+	transition: 1.5s;
+	z-index: 1;
+
+}
+
+
+.active{
+	right: 0;
+	z-index: 1;
+}
+.menu_one
+{   
+	float: left;
+	width: 30%;
+	height: 50%;
+	margin:0;
+	padding:20px 0;
+	margin-top: 50px;
+}
+.menu_one  li
+{   
+	background: #003164;
+	margin-bottom: 20px	;	
+	list-style: none;
+	text-shadow:2px 2px 1px #003164;
+
+}
+.menu_one li a:hover{background:rgb(200,200,200,0.8);color:black;}
+.menu_one li a
+{
+text-align:center;
+padding:10px 20px;
+color:black;
+display:block;
+text-decoration: none;
+border-bottom: 1px solid rgba(0,229,238,.9);
+
+}
+
+
+.sidebarBtn{
+	position: absolute;
+    z-index: 1;
+	top: 0;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+	box-sizing:border-box;
+	cursor:pointer;
+	background:gray;
+	border: none;	
+	outline: none;
+}
+
+.tost{
+	left: 0px;
+}
+.sidebarBtn  span
+{
+	display: block;
+	width: 35px;
+	height: 3px;
+	background: #262626;
+	position: absolute;
+	top:24px;
+	
+	transition:.3s;
+}
+.sidebarBtn span:before
+{
+	content:'';
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #262626;
+	transition: .3s;
+
+}
+.sidebarBtn span:after
+{
+	content:'';
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #262626;
+	transition: .3s;
+}
+.sidebarBtn.toggle span
+{
+	background: transparent;
+}
+
+.sidebarBtn.toggle span:before
+{
+	top: 0px;
+	transform:rotate(45deg);
+}
+.sidebarBtn.toggle span:after
+{
+	top: 0px;
+	transform:rotate(-45deg);
+}
+
+/*側邊目錄*/
+
+
+/*這裡放地2頁裡面的CSS*/
+.radiu3{
+	width: 24px;
+	height: 24px;
+	border:solid 2px black;
+	border-radius: 99px;
+	float: left;
+	margin-right: 5px;
+
+}
+.radiu3:hover{
+	background: black;
+}
+.todolist{
+	
+	color:black;
+	float:left;
+	width:70%;
+	height:100%;
+	background:#003164;
+}
+.ceter{
+	width:100%;
+	height:900px;
+	background:#003164;
+	margin:0 auto;
+	background-image:url("img/5-120601094Q4-50.gif");
+	padding:5%;
+	border:solid 2px black;
+}
+.text_y {
+	width: 70%;
+	height: 40px;
+	border:solid 2px black;
+	background:#FFF;
+	padding:3px;
+	font-size:20px;
+	margin:0 auto;
+	
+}
+.text_y  > i{
+	float:right;
+}
+.ol_one{
+	width:55%;
+	height:35px;
+	border-bottom:solid 2px black;
+	padding:3px;
+	margin:0 auto;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	border-radius:99px;
+}
+.ol_one:hover{
+	background:#FAEBD7;
+	border-radius:99px;
+	border:solid 2px black;
+}
+.ol_one img{
+	float:right;
+}
+/**/
+
+.play_con3{
+	position: absolute;
+	left: 0px;
+	bottom: -270px;
+	width: 540px;
+	height: 540px;
+    border-top:solid 4px #FF4384;
+    border-left:solid 4px #FF7444;
+    border-bottom:solid 4px #FF9384;
+    border-right:solid 4px #42f5f5;
+	border-radius: 999px;
+	
+	-webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+
+
+}
+
+.play_con4{
+	position: absolute;	
+	/*top: 18px;
+	right: 18px;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	height:500px;	
+	background:#FF4384;
+	border-radius: 999px;
+    background-image: url(img/500500.jpg);
+}
