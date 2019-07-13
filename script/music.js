@@ -113,7 +113,12 @@ function getConsole(i){
          SetMinute=0;
 
          myVideo.load();
-         raD[i].style.background="black";
+      
+          if(raD[i].style.background==""){
+          raD[i].style.background="black";
+         }else if(raD[i].style.background=="black"){
+          raD[i].style.background="#FFF";
+         }else{raD[i].style.background="black";}
 
          }
         else if(Music_deta[i]===Music_deta[1])
@@ -126,7 +131,12 @@ function getConsole(i){
            apple.innerHTML="總時間：4分22秒";
          SetMinute=0;
          myVideo.load();
+          
+             if(raD[i].style.background==""){
           raD[i].style.background="crimson";
+         }else if(raD[i].style.background=="crimson"){
+          raD[i].style.background="#FFF";
+         }else{raD[i].style.background="crimson";}
 
         }
         else if(Music_deta[i]===Music_deta[2])
@@ -139,7 +149,12 @@ function getConsole(i){
          apple.innerHTML="總時間：4分54秒";
          SetMinute=0;
          myVideo.load();
-         raD[i].style.background="lawngreen";
+      
+         if(raD[i].style.background==""){
+          raD[i].style.background="lawngreen";
+         }else if(raD[i].style.background=="lawngreen"){
+          raD[i].style.background="#FFF";
+         }else{raD[i].style.background="lawngreen";}
 
         }
 
