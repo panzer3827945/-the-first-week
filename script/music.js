@@ -194,7 +194,7 @@ img_play.onclick=function playVid()
             
            // alert(Math.round(Time));//播放秒數　
             img_play.src ="icon/pause-button.png";               
-           timer=setInterval("Check_Time()", 1500);
+           timer=setInterval("Check_Time()", 1000);
              timers=setInterval("Time()", 0.1);
              	
 
@@ -242,7 +242,7 @@ function Check_Time() {
         var Check_i = document.getElementById("Check_i");
              
         var Cal_Minute = Math.floor(myVideo.currentTime);
-        if(Cal_Minute >= 60){ Cal_Minute=(Cal_Minute%60)  + 1};
+        if(Cal_Minute >= 60){ Cal_Minute=(Cal_Minute%60)};
 
         var Cal_Second = Math.floor(myVideo.currentTime);
         if(Cal_Second >=  60){Cal_Second = Math.floor(myVideo.currentTime/60)}
