@@ -100,21 +100,20 @@ window.onload=function(scale){
  /*換歌失敗作品改作改名子函數*/
 function getConsole(i){
     Music_deta[i].addEventListener("click", function() {
-         var q=Nams[i].innerHTML;
-        
+         
+         var q=Nams[i].innerHTML;        
         if(Music_deta[i]===Music_deta[0])
         {
          window.clearInterval(timer);
          img_play.src ="icon/play-sign.png";    
          One.src="mp3/AprilShowersAimer.mp3";
+          play_icon.style.background="url(img/Aimer3.jpg)";         
          Che_Name.innerHTML=q;
          Check_i.innerHTML="播放時間：0分0秒";
-         apple.innerHTML="總時間：5分43秒";
+         apple.innerHTML="總時間：5分43秒";  
          SetMinute=0;
-
          myVideo.load();
-      
-          if(raD[i].style.background==""){
+         if(raD[i].style.background==""){
           raD[i].style.background="black";
          }else if(raD[i].style.background=="black"){
           raD[i].style.background="#FFF";
@@ -126,13 +125,14 @@ function getConsole(i){
         window.clearInterval(timer);
          img_play.src ="icon/play-sign.png";         
         One.src="mp3/LemonCoveredbyyurisa.mp3";
+         play_icon.style.background="url(img/Aimer1.jpg)";
          Che_Name.innerHTML=q;
          Check_i.innerHTML="播放時間：0分0秒";
            apple.innerHTML="總時間：4分22秒";
          SetMinute=0;
          myVideo.load();
-          
-             if(raD[i].style.background==""){
+         
+          if(raD[i].style.background==""){
           raD[i].style.background="crimson";
          }else if(raD[i].style.background=="crimson"){
           raD[i].style.background="#FFF";
@@ -144,12 +144,13 @@ function getConsole(i){
          window.clearInterval(timer);
          img_play.src ="icon/play-sign.png"; 
          One.src="mp3/花篝り.mp3";
+         play_icon.style.background="url(img/Aimer.jpg)";
          Che_Name.innerHTML=q;
          Check_i.innerHTML="播放時間：0分0秒";
          apple.innerHTML="總時間：4分54秒";
          SetMinute=0;
          myVideo.load();
-      
+         
          if(raD[i].style.background==""){
           raD[i].style.background="lawngreen";
          }else if(raD[i].style.background=="lawngreen"){
@@ -166,6 +167,7 @@ function getConsole(i){
          Che_Name.innerHTML=q;
          Check_i.innerHTML="播放時間：0分0秒";
          apple.innerHTML="總時間：4分52秒";
+         play_icon.style.background="url(img/Aimer4.jpg)";
          SetMinute=0;
          myVideo.load();
          if(raD[i].style.background==""){
